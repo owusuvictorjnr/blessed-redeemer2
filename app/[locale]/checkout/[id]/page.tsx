@@ -1,6 +1,5 @@
 import { notFound } from 'next/navigation'
 import React from 'react'
-
 import { auth } from '@/auth'
 import { getOrderById } from '@/lib/actions/order.actions'
 import PaymentForm from './payment-form'
@@ -37,7 +36,6 @@ const CheckoutPaymentPage = async (props: {
   return (
     <PaymentForm
       order={order}
-      paypalClientId={process.env.PAYPAL_CLIENT_ID || 'sb'}
       clientSecret={client_secret}
       isAdmin={session?.user?.role === 'Admin' || false}
     />
