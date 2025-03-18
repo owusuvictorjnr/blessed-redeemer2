@@ -49,6 +49,9 @@ export async function deleteUser(id: string) {
     return { success: false, message: formatError(error) }
   }
 }
+
+
+
 // UPDATE
 
 export async function updateUser(user: z.infer<typeof UserUpdateSchema>) {
