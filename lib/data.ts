@@ -1255,7 +1255,7 @@ We also provide helpful resources such as order tracking, product guides, and FA
         description:
           'An online platform for premium fashion and design, offering unique styles and exceptional quality for modern trends.',
         keywords: 'Next Ecommerce, Next.js, Tailwind CSS, MongoDB',
-        url: 'https://next-mongo-ecommerce-final.vercel.app',
+        url: 'https://blessed-redeemer2-git-main-owusuvictorjnrs-projects.vercel.app',
         logo: '/icons/mylogo.svg',
         slogan: 'Spend less, enjoy more.',
         author: 'Vitech Solutions',
