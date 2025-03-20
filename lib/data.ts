@@ -1222,21 +1222,21 @@ We also provide helpful resources such as order tracking, product guides, and FA
     {
       title: 'Most Popular Shoes For Sale',
       buttonCaption: 'Shop Now',
-      image: '/images/banner3.jpg',
+      image: '/images/jeans/jeans15.jpg',
       url: '/search?category=Shoes',
       isPublished: true,
     },
     {
       title: 'Best Sellers in T-Shirts',
       buttonCaption: 'Shop Now',
-      image: '/images/banner1.jpg',
+      image: '/images/shirts/shirt9.jpg',
       url: '/search?category=T-Shirts',
       isPublished: true,
     },
     {
       title: 'Best Deals on Wrist Watches',
       buttonCaption: 'See More',
-      image: '/images/banner2.jpg',
+      image: '/images/sneakers/sneak13.jpg',
       url: '/search?category=Wrist Watches',
       isPublished: true,
     },
@@ -1265,17 +1265,23 @@ We also provide helpful resources such as order tracking, product guides, and FA
         phone: '+1 (123) 456-7890',
       },
       carousels: [
-        {
-          title: 'Most Popular Shoes For Sale',
-          buttonCaption: 'Shop Now',
-          image: '/images/banner3.jpg',
-          url: '/search?category=Shoes',
-        },
+        // {
+        //   title: 'Most Popular Shoes',
+        //   buttonCaption: 'Shop Now',
+        //   image: '/images/jeans/jeans15.jpg',
+        //   url: '/search?category=Shoes',
+        // },
         {
           title: 'Best Sellers in T-Shirts',
           buttonCaption: 'Shop Now',
-          image: '/images/banner1.jpg',
+          image: '/images/shirts/shirt9.jpg',
           url: '/search?category=T-Shirts',
+        },
+        {
+          title: 'Most Popular Shoes For Sale',
+          buttonCaption: 'See More',
+          image: '/images/sneakers/sneak13.jpg',
+          url: '/search?category=shoes',
         },
         {
           title: 'Best Deals on Wrist Watches',
@@ -1298,6 +1304,12 @@ We also provide helpful resources such as order tracking, product guides, and FA
         },
         { name: 'Euro', code: 'EUR', symbol: '€', convertRate: 0.96 },
         { name: 'UAE Dirham', code: 'AED', symbol: 'AED', convertRate: 3.67 },
+        {
+          name: 'Ghanaian Cedi',
+          code: 'GHS',
+          symbol: 'GH₵',
+          convertRate: 12.50 // Example conversion rate (1 USD = 12.50 GHS)
+        }
       ],
       defaultCurrency: 'USD',
 
@@ -1307,7 +1319,7 @@ We also provide helpful resources such as order tracking, product guides, and FA
         { name: 'Stripe', commission: 0 },
         { name: 'Cash On Delivery', commission: 0 },
       ],
-      defaultPaymentMethod: 'PayPal',
+      defaultPaymentMethod: 'Stripe',
       availableDeliveryDates: [
         {
           name: 'Tomorrow',
