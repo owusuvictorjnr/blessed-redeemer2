@@ -35,6 +35,8 @@ export type Data = {
   users: IUserInput[]
   products: IProductInput[]
   reviews: {
+    // user: unknown
+    // product: unknown
     title: string
     rating: number
     comment: string
