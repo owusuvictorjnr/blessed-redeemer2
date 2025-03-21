@@ -12,10 +12,10 @@ const users: IUserInput[] = [
     address: {
       fullName: 'John Doe',
       street: '111 Main St',
-      city: 'New York',
-      province: 'NY',
+      city: 'Accra',
+      province: 'Greater Accra',
       postalCode: '10001',
-      country: 'USA',
+      country: 'Ghana',
       phone: '123-456-7890',
     },
     paymentMethod: 'Stripe',
@@ -234,9 +234,9 @@ const users: IUserInput[] = [
       fullName: 'David Lee',
       street: '105 First Ave',
       city: 'New York',
-      province: 'NY',
+      province: 'Greater Accra',
       postalCode: '10014',
-      country: 'USA',
+      country: 'Ghana',
       phone: '123-456-7890',
     },
     paymentMethod: 'Cash On Delivery',
@@ -262,6 +262,7 @@ const users: IUserInput[] = [
 ]
 
 const products: IProductInput[] = [
+  // T-Shirts
   {
     name: 'Nike Mens Slim-fit Long-Sleeve T-Shirt',
     slug: toSlug('Nike Mens Slim-fit Long-Sleeve T-Shirt'),
@@ -440,6 +441,7 @@ const products: IProductInput[] = [
 
     reviews: [],
   },
+
   // Jeans
   {
     name: 'Silver Jeans Co. Mens Jace Slim Fit Bootcut Jeans',
@@ -613,6 +615,7 @@ const products: IProductInput[] = [
 
     reviews: [],
   },
+
   // Watches
   {
     name: "Seiko Men's Analogue Watch with Black Dial",
@@ -788,7 +791,189 @@ const products: IProductInput[] = [
 
     reviews: [],
   },
+
+
+
   // Sneakers
+  {
+    name: "Sneaker",
+    slug: toSlug("Nike Men's  Sneaker with Black Lines"),
+    category: 'Men Sneakers',
+    brand: 'Nike',
+    images: ['/images/sneakers/sneak1.jpg', '/images/sneakers/sneak2.jpg'],
+    tags: ['new-arrival'],
+    isPublished: true,
+    price: 530.0,
+    listPrice: 0,
+    avgRating: 4.71,
+    numReviews: 7,
+    ratingDistribution: [
+      { rating: 1, count: 0 },
+      { rating: 2, count: 0 },
+      { rating: 3, count: 0 },
+      { rating: 4, count: 2 },
+      { rating: 5, count: 5 },
+    ],
+    countInStock: 31,
+    numSales: 48,
+    description:
+      'Leather: Case made of stainless steel Case shape: round Case colour: silver Glass: Hardlex Clasp type: Fold over clasp with safety',
+    sizes: [],
+    colors: [],
+
+    reviews: [],
+  },
+  {
+    name: 'Adidas 5 Sport SRPJ83 Beige Dial Nylon Automatic Watch, Beige, Automatic Adidas',
+    slug: toSlug(
+      'Adidas 5 Sport SRPJ83 Beige Dial Nylon Automatic Sneaker, Beige, Automatic Sneaker'
+    ),
+    category: 'Men Sneakers',
+    brand: 'Adidas',
+    images: ['/images/sneakers/sneak3.jpg', '/images/sneakers/sneak4.jpg'],
+    tags: ['featured'],
+    isPublished: true,
+    price: 375.83,
+    listPrice: 400,
+    avgRating: 4.2,
+    numReviews: 10,
+    ratingDistribution: [
+      { rating: 1, count: 1 },
+      { rating: 2, count: 0 },
+      { rating: 3, count: 0 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 5 },
+    ],
+    countInStock: 32,
+    numSales: 48,
+    description:
+      'Seiko 5 Sports Collection Inspired by vintage field/aviator style: Automatic with manual winding capability',
+    sizes: [],
+    colors: [],
+
+    reviews: [],
+  },
+  {
+    name: "Adidas Men's Heavy Duty Analog Quartz Stainless Steel Strap, Silver, 42 Casual Watch ",
+    slug: toSlug(
+      "Adidas Men's Heavy Duty Analog Quartz Stainless Steel Strap, Silver, 42 Casual Watch"
+    ),
+    category: 'Men Sneakers',
+    brand: 'Adidas',
+    images: ['/images/sneakers/sneak5.jpg', '/images/sneakers/sneak6.jpg'],
+    tags: ['best-seller'],
+    isPublished: true,
+    price: 60.78,
+    listPrice: 0,
+    avgRating: 4,
+    numReviews: 12,
+    ratingDistribution: [
+      { rating: 1, count: 1 },
+      { rating: 2, count: 0 },
+      { rating: 3, count: 2 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 5 },
+    ],
+    countInStock: 33,
+    numSales: 48,
+    description:
+      'The Casio range is growing with this model  MWA-100H-1AVEF. Sporting a stainless steel case with a brushed finish, it will easily withstand all the shocks of everyday life.',
+    sizes: [],
+    colors: [],
+
+    reviews: [],
+  },
+  {
+    name: 'Nike Classic Silver-Tone Stainless Steel Band Date Indicator Sneaker',
+    slug: toSlug(
+      'Nike Classic Silver-Tone Stainless Steel Band Date Indicator Sneaker'
+    ),
+    category: 'Men Sneakers',
+    brand: 'Nike',
+    images: ['/images/sneakers/sneak7.jpg', '/images/sneakers/sneak8.jpg'],
+    tags: ['todays-deal'],
+    isPublished: true,
+    price: 34.22,
+    listPrice: 54.99,
+    avgRating: 3.85,
+    numReviews: 14,
+    ratingDistribution: [
+      { rating: 1, count: 0 },
+      { rating: 2, count: 2 },
+      { rating: 3, count: 3 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 5 },
+    ],
+    countInStock: 34,
+    numSales: 48,
+    description:
+      'The new MTPVD01D-7EV is a classic 50 meter water resistant stainless steel watch now updated with a white dial. This elegant 3 hand, date display timepiece is perfect for any setting.',
+    sizes: [],
+    colors: [],
+
+    reviews: [],
+  },
+  {
+    name: "Ajasko Men's Grant Stainless Steel Quartz Chronograph Sneaker",
+    slug: toSlug("Ajasko Men's Grant Stainless Steel Quartz Chronograph Sneaker"),
+    category: 'Men Sneaker',
+    brand: 'Ajasko',
+    images: ['/images/sneakers/sneak9.jpg', '/images/sneakers/sneak10.jpg'],
+    tags: ['new-arrival', 'featured'],
+    isPublished: true,
+    price: 171.22,
+    listPrice: 225,
+    avgRating: 3.66,
+    numReviews: 15,
+    ratingDistribution: [
+      { rating: 1, count: 1 },
+      { rating: 2, count: 2 },
+      { rating: 3, count: 3 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 5 },
+    ],
+    countInStock: 35,
+    numSales: 48,
+    description:
+      'Chronograph watch featuring silver- and blue-tone case, blue sunray dial, and silver-tone Roman numeral indices',
+    sizes: [],
+    colors: ['Blue', 'Black', 'Sliver'],
+
+    reviews: [],
+  },
+  {
+    name: "Jack Men's Machine Stainless Steel Quartz Jack",
+    slug: toSlug("Jack Men's Machine Stainless Steel Quartz Jack"),
+    category: 'Men Sneaker',
+    brand: 'Jack',
+    images: ['/images/sneakers/sneak11.jpg', '/images/sneakers/sneak12.jpg'],
+    tags: ['best-seller', 'todays-deal'],
+    isPublished: true,
+    price: 158.21,
+    listPrice: 229.0,
+    avgRating: 3.46,
+    numReviews: 13,
+    ratingDistribution: [
+      { rating: 1, count: 1 },
+      { rating: 2, count: 2 },
+      { rating: 3, count: 3 },
+      { rating: 4, count: 4 },
+      { rating: 5, count: 3 },
+    ],
+    countInStock: 36,
+    numSales: 49,
+    description:
+      'In masculine black-on-black, our industrial-inspired Machine watch will add a fresh, modern touch to your casual look. This Machine watch also features a three hand movement on a stainless steel bracelet.',
+    sizes: [],
+    colors: ['Brown', 'Sliver', 'Black'],
+
+    reviews: [],
+  },
+
+
+
+
+  // Shoes
   {
     name: 'adidas Mens Grand Court 2.0 Training Shoes Training Shoes',
     slug: toSlug('adidas Mens Grand Court 2.0 Training Shoes Training Shoes'),
@@ -1259,7 +1444,7 @@ We also provide helpful resources such as order tracking, product guides, and FA
         logo: '/icons/mylogo.svg',
         slogan: 'Spend less, enjoy more.',
         author: 'Vitech Solutions',
-        copyright: '2000-2024, vitech-solutions, Inc. or its affiliates',
+        copyright: '2025, vitech-solutions, Inc. or its affiliates',
         email: 'admin@example.com',
         address: '123, Main Street, Anytown, GH, Zip 12345',
         phone: '+1 (123) 456-7890',
@@ -1308,14 +1493,12 @@ We also provide helpful resources such as order tracking, product guides, and FA
           name: 'Ghanaian Cedi',
           code: 'GHS',
           symbol: 'GH₵',
-          convertRate: 12.50 // Example conversion rate (1 USD = 12.50 GHS)
-        }
+          convertRate: 12.5, // Example conversion rate (1 USD = 12.50 GHS)
+        },
       ],
       defaultCurrency: 'USD',
 
-      
       availablePaymentMethods: [
-        // { name: 'PayPal', commission: 0 },
         { name: 'Stripe', commission: 0 },
         { name: 'Cash On Delivery', commission: 0 },
       ],
