@@ -824,7 +824,7 @@ const products: IProductInput[] = [
   {
     name: 'Adidas 5 Sport SRPJ83 Beige Dial Nylon Automatic Watch, Beige, Automatic Adidas',
     slug: toSlug(
-      'Adidas 5 Sport SRPJ83 Beige Dial Nylon Automatic Sneaker, Beige, Automatic Sneaker'
+      'Adidas 5 Sport SRPJ83 Beige Dial Nylon  Sneaker, Beige, Automatic Sneaker'
     ),
     category: 'Men Sneakers',
     brand: 'Adidas',
