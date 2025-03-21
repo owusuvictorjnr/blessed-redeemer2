@@ -792,15 +792,13 @@ const products: IProductInput[] = [
     reviews: [],
   },
 
-
-
   // Sneakers
   {
-    name: "Sneaker",
+    name: 'Sneaker',
     slug: toSlug("Nike Men's  Sneaker with Black Lines"),
     category: 'Men Sneakers',
     brand: 'Nike',
-    images: ['/images/sneakers/sneak1.jpg', '/images/sneakers/sneak2.jpg'],
+    images: ['/images/sneak1.jpg', '/images/sneak2.jpg'],
     tags: ['new-arrival'],
     isPublished: true,
     price: 530.0,
@@ -830,7 +828,7 @@ const products: IProductInput[] = [
     ),
     category: 'Men Sneakers',
     brand: 'Adidas',
-    images: ['/images/sneakers/sneak3.jpg', '/images/sneakers/sneak4.jpg'],
+    images: ['/images/sneak3.jpg', '/images/sneak4.jpg'],
     tags: ['featured'],
     isPublished: true,
     price: 375.83,
@@ -860,7 +858,7 @@ const products: IProductInput[] = [
     ),
     category: 'Men Sneakers',
     brand: 'Adidas',
-    images: ['/images/sneakers/sneak5.jpg', '/images/sneakers/sneak6.jpg'],
+    images: ['/images/sneak5.jpg', '/images/sneak6.jpg'],
     tags: ['best-seller'],
     isPublished: true,
     price: 60.78,
@@ -890,7 +888,7 @@ const products: IProductInput[] = [
     ),
     category: 'Men Sneakers',
     brand: 'Nike',
-    images: ['/images/sneakers/sneak7.jpg', '/images/sneakers/sneak8.jpg'],
+    images: ['/images/sneak7.jpg', '/images/sneak8.jpg'],
     tags: ['todays-deal'],
     isPublished: true,
     price: 34.22,
@@ -915,10 +913,12 @@ const products: IProductInput[] = [
   },
   {
     name: "Ajasko Men's Grant Stainless Steel Quartz Chronograph Sneaker",
-    slug: toSlug("Ajasko Men's Grant Stainless Steel Quartz Chronograph Sneaker"),
+    slug: toSlug(
+      "Ajasko Men's Grant Stainless Steel Quartz Chronograph Sneaker"
+    ),
     category: 'Men Sneaker',
     brand: 'Ajasko',
-    images: ['/images/sneakers/sneak9.jpg', '/images/sneakers/sneak10.jpg'],
+    images: ['/images/sneak9.jpg', '/images/sneak10.jpg'],
     tags: ['new-arrival', 'featured'],
     isPublished: true,
     price: 171.22,
@@ -946,7 +946,7 @@ const products: IProductInput[] = [
     slug: toSlug("Jack Men's Machine Stainless Steel Quartz Jack"),
     category: 'Men Sneaker',
     brand: 'Jack',
-    images: ['/images/sneakers/sneak11.jpg', '/images/sneakers/sneak12.jpg'],
+    images: ['/images/sneak11.jpg', '/images/sneak12.jpg'],
     tags: ['best-seller', 'todays-deal'],
     isPublished: true,
     price: 158.21,
@@ -969,9 +969,6 @@ const products: IProductInput[] = [
 
     reviews: [],
   },
-
-
-
 
   // Shoes
   {
@@ -1421,7 +1418,7 @@ We also provide helpful resources such as order tracking, product guides, and FA
     {
       title: 'Best Deals on Wrist Watches',
       buttonCaption: 'See More',
-      image: '/images/sneakers/sneak13.jpg',
+      image: '/images/sneak13.jpg',
       url: '/search?category=Wrist Watches',
       isPublished: true,
     },
@@ -1465,7 +1462,7 @@ We also provide helpful resources such as order tracking, product guides, and FA
         {
           title: 'Most Popular Shoes For Sale',
           buttonCaption: 'See More',
-          image: '/images/sneakers/sneak13.jpg',
+          image: '/images/sneak13.jpg',
           url: '/search?category=shoes',
         },
         {
