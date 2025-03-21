@@ -27,7 +27,7 @@ export function HomeCarousel({ items }: { items: ICarousel[] }) {
     <Carousel
       dir='ltr'
       plugins={[plugin.current]}
-      className='w-full mx-auto '
+      className='w-full mx-auto'
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
