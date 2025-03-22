@@ -916,7 +916,7 @@ const products: IProductInput[] = [
     slug: toSlug(
       "Ajasko Men's Grant Stainless Steel Quartz Chronograph Sneaker"
     ),
-    category: 'Men Sneaker',
+    category: 'Men Sneakers',
     brand: 'Ajasko',
     images: ['/images/sneak9.jpg', '/images/sneak10.jpg'],
     tags: ['new-arrival', 'featured'],
@@ -944,7 +944,7 @@ const products: IProductInput[] = [
   {
     name: "Jack Men's Machine Stainless Steel Quartz Jack",
     slug: toSlug("Jack Men's Machine Stainless Steel Quartz Jack"),
-    category: 'Men Sneaker',
+    category: 'Men Sneakers',
     brand: 'Jack',
     images: ['/images/sneak11.jpg', '/images/sneak12.jpg'],
     tags: ['best-seller', 'todays-deal'],
