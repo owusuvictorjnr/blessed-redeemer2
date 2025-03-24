@@ -267,7 +267,7 @@ const products: IProductInput[] = [
     name: 'Nike Mens Slim-fit Long-Sleeve T-Shirt',
     slug: toSlug('Nike Mens Slim-fit Long-Sleeve T-Shirt'),
     category: 'T-Shirts',
-    images: ['/images/p11-1.jpg', '/images/p11-2.jpg'],
+    images: ['/images/shirt1.jpg', '/images/shirt2.jpg'],
     tags: ['new-arrival'],
     isPublished: true,
     price: 21.8,
@@ -296,10 +296,10 @@ const products: IProductInput[] = [
     slug: toSlug('Jerzees Long-Sleeve Heavyweight Blend T-Shirt'),
     category: 'T-Shirts',
     images: [
-      '/images/p12-1.jpg',
-      '/images/p12-2.jpg',
-      '/images/p12-3.jpg',
-      '/images/p12-4.jpg',
+      '/images/shirt1.jpg',
+      '/images/shirt2.jpg',
+      '/images/shirt3.jpg',
+      '/images/shirt4.jpg',
     ],
     tags: ['featured'],
     isPublished: true,
@@ -330,7 +330,7 @@ const products: IProductInput[] = [
     slug: toSlug('Jerzees Men Long-Sleeve T-Shirt'),
     category: 'T-Shirts',
     brand: 'Jerzees',
-    images: ['/images/p13-1.jpg', '/images/p13-2.jpg'],
+    images: ['/images/shirt6.jpg', '/images/shirt7.jpg'],
     tags: ['best-seller'],
     isPublished: true,
     price: 13.86,
@@ -360,7 +360,7 @@ const products: IProductInput[] = [
     ),
     category: 'T-Shirts',
     brand: 'Jerzees',
-    images: ['/images/p14-1.jpg', '/images/p14-2.jpg'],
+    images: ['/images/shirt8.jpg', '/images/shirt9.jpg'],
     tags: ['todays-deal'],
     isPublished: true,
     price: 26.95,
@@ -390,7 +390,7 @@ const products: IProductInput[] = [
     ),
     category: 'T-Shirts',
     brand: ' Muscle Cmdr',
-    images: ['/images/p15-1.jpg', '/images/p15-2.jpg'],
+    images: ['/images/shirt10.jpg', '/images/shirt11.jpg'],
     tags: ['new-arrival', 'featured'],
     isPublished: true,
     price: 29.99,
@@ -418,7 +418,7 @@ const products: IProductInput[] = [
     slug: toSlug('Hanes Mens Long Sleeve Beefy Henley Shirt'),
     category: 'T-Shirts',
     brand: 'Jerzees',
-    images: ['/images/p16-1.jpg', '/images/p16-2.jpg'],
+    images: ['/images/shirt1.jpg', '/images/shirt12.jpg'],
     tags: ['best-seller', 'todays-deal'],
     isPublished: true,
     price: 25.3,
@@ -796,7 +796,7 @@ const products: IProductInput[] = [
   {
     name: 'Sneaker',
     slug: toSlug("Nike Men's  Sneaker with Black Lines"),
-    category: 'Men Sneakers',
+    category: 'Men-Sneakers',
     brand: 'Nike',
     images: ['/images/sneak1.jpg', '/images/sneak2.jpg'],
     tags: ['new-arrival'],
@@ -826,7 +826,7 @@ const products: IProductInput[] = [
     slug: toSlug(
       'Adidas 5 Sport SRPJ83 Beige Dial Nylon  Sneaker, Beige, Automatic Sneaker'
     ),
-    category: 'Men Sneakers',
+    category: 'Men-Sneakers',
     brand: 'Adidas',
     images: ['/images/sneak3.jpg', '/images/sneak4.jpg'],
     tags: ['featured'],
@@ -856,7 +856,7 @@ const products: IProductInput[] = [
     slug: toSlug(
       "Adidas Men's Heavy Duty Analog Quartz Stainless Steel Strap, Silver, 42 Casual Watch"
     ),
-    category: 'Men Sneakers',
+    category: 'Men-Sneakers',
     brand: 'Adidas',
     images: ['/images/sneak5.jpg', '/images/sneak6.jpg'],
     tags: ['best-seller'],
@@ -886,7 +886,7 @@ const products: IProductInput[] = [
     slug: toSlug(
       'Nike Classic Silver-Tone Stainless Steel Band Date Indicator Sneaker'
     ),
-    category: 'Men Sneakers',
+    category: 'Men-Sneakers',
     brand: 'Nike',
     images: ['/images/sneak7.jpg', '/images/sneak8.jpg'],
     tags: ['todays-deal'],
@@ -916,7 +916,7 @@ const products: IProductInput[] = [
     slug: toSlug(
       "Ajasko Men's Grant Stainless Steel Quartz Chronograph Sneaker"
     ),
-    category: 'Men Sneakers',
+    category: 'Men-Sneakers',
     brand: 'Ajasko',
     images: ['/images/sneak9.jpg', '/images/sneak10.jpg'],
     tags: ['new-arrival', 'featured'],
@@ -944,7 +944,7 @@ const products: IProductInput[] = [
   {
     name: "Jack Men's Machine Stainless Steel Quartz Jack",
     slug: toSlug("Jack Men's Machine Stainless Steel Quartz Jack"),
-    category: 'Men Sneakers',
+    category: 'Men-Sneakers',
     brand: 'Jack',
     images: ['/images/sneak11.jpg', '/images/sneak12.jpg'],
     tags: ['best-seller', 'todays-deal'],
