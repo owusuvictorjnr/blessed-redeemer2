@@ -1,3 +1,5 @@
+//nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+
 import { IOrder } from './db/models/order.model'
 import axios from 'axios'
 
@@ -31,7 +33,7 @@ export async function initializePaystackTransaction(order: IOrder) {
         amount: Math.round(order.totalPrice * 100), // Convert to pesewas
         currency: 'GHS', // Ensure Ghanaian Cedi is used
         reference: `order_${order._id}_${Date.now()}`,
-        callback_url: process.env.PAYSTACK_CALLBACK_URL,
+        callback_url: CALLBACK_URL,
         channels: ['mobile_money', 'card'], // Ensure MoMo appears
       },
       {
@@ -54,27 +56,3 @@ export async function initializePaystackTransaction(order: IOrder) {
     return null
   }
 }
-
-// export async function initializePaystackTransaction(order: IOrder) {
-//   const response = await fetch(
-//     'https://api.paystack.co/transaction/initialize',
-//     {
-//       method: 'POST',
-//       headers: {
-//         Authorization: `Bearer ${process.env.PAYSTACK_SECRET_KEY}`,
-//         'Content-Type': 'application/json',
-//       },
-//       body: JSON.stringify({
-//         email: order.userEmail,
-//         amount: Math.round(order.totalPrice * 100), // Convert to kobo
-//         currency: 'GHS', // Ghanaian Cedis for Mobile Money
-//         callback_url: `${process.env.NEXT_PUBLIC_APP_URL}/checkout/${order._id}/paystack-success`,
-//         metadata: { orderId: order._id },
-//         reference: `order_${order._id}_${Date.now()}`, // Unique reference
-//       }),
-//     }
-//   )
-
-//   const data = await response.json()
-//   return data.data.authorization_url // Ensure this value is returned
-// }
