@@ -1,16 +1,16 @@
 import Link from 'next/link'
 import { notFound, redirect } from 'next/navigation'
-
 import { Button } from '@/components/ui/button'
 import { getOrderById } from '@/lib/actions/order.actions'
 
-export default async function SuccessPage(props: {
+type Props = {
   params: { id: string }
   searchParams: { reference: string }
-}) {
-  const { id } = props.params
-  const { reference } = props.searchParams
+}
 
+export default async function SuccessPage({ params, searchParams }: Props) {
+  const { id } = params
+  const { reference } = searchParams
   const order = await getOrderById(id)
   if (!order) notFound()
 
