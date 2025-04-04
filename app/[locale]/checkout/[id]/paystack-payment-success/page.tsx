@@ -3,19 +3,24 @@ import { notFound, redirect } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { getOrderById } from '@/lib/actions/order.actions'
 
-type Props = {
-  params: { id: string }
-  searchParams: { reference: string }
+
+
+
+type PageProps<T> = {
+  params: T
+  searchParams: Record<string, string>
 }
 
-export default async function SuccessPage({ params, searchParams }: Props) {
+export default async function SuccessPage({
+  params,
+  searchParams,
+}: PageProps<{ id: string }>) {
   const { id } = params
   const { reference } = searchParams
 
   const order = await getOrderById(id)
   if (!order) notFound()
 
-  // Verify Paystack Payment
   const response = await fetch(
     `https://api.paystack.co/transaction/verify/${reference}`,
     {
