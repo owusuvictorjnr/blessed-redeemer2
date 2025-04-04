@@ -1,5 +1,3 @@
-//nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
-
 import { IOrder } from './db/models/order.model'
 import axios from 'axios'
 
@@ -48,7 +46,7 @@ export async function initializePaystackTransaction(order: IOrder) {
     console.log('Paystack Response:', data)
 
     return data.data.authorization_url // ✅ Return the URL correctly
-  } catch (error) {
+  } catch {
     console.error('Paystack Error:')
     return null
   }
