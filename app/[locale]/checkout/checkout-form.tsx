@@ -43,13 +43,13 @@ import ProductPrice from '@/components/shared/product/product-price'
 const shippingAddressDefaultValues =
   process.env.NODE_ENV === 'development'
     ? {
-        fullName: 'Basir',
-        street: '1911, 65 Sherbrooke Est',
-        city: 'Montreal',
-        province: 'Quebec',
-        phone: '4181234567',
+        fullName: 'vitech',
+        street: '12345 Main St',
+        city: 'Accra',
+        province: 'Great Accra Region',
+        phone: '+233 123456789',
         postalCode: 'H2X 1C4',
-        country: 'Canada',
+        country: 'Ghana',
       }
     : {
         fullName: '',
