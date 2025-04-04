@@ -2,7 +2,7 @@ import { IOrderInput } from '@/types'
 import { Document, Model, model, models, Schema } from 'mongoose'
 
 export interface IOrder extends Document, IOrderInput {
-  userEmail: any
+  userEmail: string
   _id: string
   createdAt: Date
   updatedAt: Date
