@@ -49,10 +49,7 @@ export async function initializePaystackTransaction(order: IOrder) {
 
     return data.data.authorization_url // ✅ Return the URL correctly
   } catch (error) {
-    console.error(
-      'Paystack Error:',
-      (error as any).response?.data || (error as any).message
-    )
+    console.error('Paystack Error:')
     return null
   }
 }
