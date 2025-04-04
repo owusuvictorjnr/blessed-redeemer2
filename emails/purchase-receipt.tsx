@@ -57,7 +57,7 @@ PurchaseReceiptEmail.PreviewProps = {
         countInStock: 10,
       },
     ],
-    paymentMethod: 'PayPal',
+    paymentMethod: 'Paystack',
     expectedDeliveryDate: new Date(),
     isDelivered: true,
   } as IOrder,
