@@ -1497,6 +1497,7 @@ We also provide helpful resources such as order tracking, product guides, and FA
 
       availablePaymentMethods: [
         { name: 'Stripe', commission: 0 },
+        { name: 'Paystack', commission: 0 },
         { name: 'Cash On Delivery', commission: 0 },
       ],
       defaultPaymentMethod: 'Stripe',
