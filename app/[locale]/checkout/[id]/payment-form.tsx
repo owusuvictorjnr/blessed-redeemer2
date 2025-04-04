@@ -1,8 +1,5 @@
 'use client'
 
-
-
-
 import { Card, CardContent } from '@/components/ui/card'
 import { IOrder } from '@/lib/db/models/order.model'
 import { formatDateTime } from '@/lib/utils'
@@ -21,11 +18,15 @@ export default function OrderDetailsForm({
   order,
 
   clientSecret,
+
+  paystackUrl,
 }: {
   order: IOrder
- 
+
   isAdmin: boolean
   clientSecret: string | null
+
+  paystackUrl?: string | null
 }) {
   const router = useRouter()
   const {
@@ -39,12 +40,10 @@ export default function OrderDetailsForm({
     expectedDeliveryDate,
     isPaid,
   } = order
- 
 
   if (isPaid) {
     redirect(`/account/orders/${order._id}`)
   }
- 
 
   const CheckoutSummary = () => (
     <Card>
@@ -89,7 +88,7 @@ export default function OrderDetailsForm({
               </span>
             </div>
 
-            
+            {/* Stripe Payment */}
             {!isPaid && paymentMethod === 'Stripe' && clientSecret && (
               <Elements
                 options={{
@@ -104,6 +103,17 @@ export default function OrderDetailsForm({
               </Elements>
             )}
 
+            {/* Paystack payment */}
+            {!isPaid && paymentMethod === 'Paystack' && paystackUrl && (
+              <Button
+                className='w-full rounded-full bg-green-500 text-white'
+                onClick={() => (window.location.href = paystackUrl)} // Redirects to Paystack
+              >
+                Pay with Paystack (Mobile Money)
+              </Button>
+            )}
+
+            {/* Cash On Delivery */}
             {!isPaid && paymentMethod === 'Cash On Delivery' && (
               <Button
                 className='w-full rounded-full'
